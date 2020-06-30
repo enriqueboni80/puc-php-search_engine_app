@@ -38,7 +38,7 @@ class EnterCommand extends Command
             ->setRows($row)
         ;
         $output->writeln($results->count() . " results was found form term ".$text." on wikipedia");
-        $output->writeln("showing ".$results->countItemsOnPage()." firstresults");
+        $output->writeln("showing ".$results->countItemsOnPage()." first results");
         $table->render();
         return 0;
     }
